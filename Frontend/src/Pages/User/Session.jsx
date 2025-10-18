@@ -222,11 +222,6 @@ console.log("Booking response:", response.data);
                     <User className="w-6 h-6 text-teal-500" />
                     {coach.name} <CircleCheck className="text-teal-500 w-6 h-6 sm:w-7 sm:h-7" />
                   </h2>
-                  <h3 className="text-xl sm:text-2xl text-gray-800 font-semibold mb-2">About</h3>
-                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4">
-                    {coach.about ||
-                      "This coach is committed to providing excellent care with a focus on patient well-being."}
-                  </p>
                 
                 </div>
               </div>
