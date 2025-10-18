@@ -201,11 +201,7 @@ const BookedSessions = () => {
                         Cancel
                       </button>
                     )}
-                    {session.status === "Cancellation Requested" && (
-                      <span className="text-gray-500 text-sm italic">
-                        Awaiting Refund Approval
-                      </span>
-                    )}
+              
                     {session.status === "Cancelled" && (
                       <>
                       
