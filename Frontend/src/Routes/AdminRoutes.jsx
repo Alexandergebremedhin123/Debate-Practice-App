@@ -3,7 +3,7 @@ import AdminHome from "../Pages/Admin/AdminHome";
 import { AdminNavbar } from "../Components/AdminNavbar";
 import NotFound from "../Pages/User/NotFound";
 
-function UserRoutes() {
+function AdminRoutes() {
   return (
     <>
     <AdminNavbar/>
@@ -17,4 +17,4 @@ function UserRoutes() {
    
 }
 
-export default UserRoutes;
+export default AdminRoutes;
