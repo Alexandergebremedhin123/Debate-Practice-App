@@ -125,7 +125,6 @@ const AddCoach = () => {
           email: "",
           password: "",
           image: null,
-          fees: "",
           address: "",
           about: "",
         });
