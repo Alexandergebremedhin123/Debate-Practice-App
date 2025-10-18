@@ -139,7 +139,6 @@ export const Dashboard = () => {
                           <Calendar className="w-6 h-6 text-teal-600" />
                         </div>
                         <div>
-                          <p className="text-gray-800 font-bold text-sm sm:text-base">{session.patient}</p>
                           <p className="text-sm text-gray-600">
                             {session.time} | {session.coach} | {session.date}
                           </p>
