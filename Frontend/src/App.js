@@ -62,7 +62,6 @@ function App() {
 
       {location.pathname !== "/login" &&
         location.pathname !== "/signup" &&
-        location.pathname !== "/chatbot" &&
         userRole === "user" }
 
       {location.pathname !== "/login" }
