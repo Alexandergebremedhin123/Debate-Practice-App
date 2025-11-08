@@ -358,8 +358,8 @@ const CoachApplication = () => {
                     type="button"
                     onClick={nextStep}
                     disabled={(currentStep === 0 && (errors.name || errors.email || errors.password))||
-                              (currentStep === 1 && () ||
-                              (currentStep === 2 && () ||
+                              (currentStep === 1 && (errors.name)||(errors.email)) ||
+                              (currentStep === 2 )||
                               (currentStep === 3&& (errors.address || errors.about))}
                     className={`px-8 py-3 bg-gradient-to-r from-[#007E85] to-[#00A3AD] text-white font-semibold rounded-full transition-all w-full sm:w-auto sm:ml-auto shadow-md ${
                       (currentStep === 0 && (errors.name || errors.email || errors.password)) ||
