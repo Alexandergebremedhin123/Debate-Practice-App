@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const steps = ["1", "2", "3", "4"];
+const steps = ["1", "2", "3"];
 
 
 const CoachApplication = () => {
@@ -36,9 +36,6 @@ const CoachApplication = () => {
         break;
       case 1:
         fieldsToValidate = ["address", "about"];
-        break;
-      case 2:
-        fieldsToValidate = ["name", "email", "password", "address", "about"];
         break;
       default:
         break;
@@ -358,12 +355,10 @@ const CoachApplication = () => {
                     type="button"
                     onClick={nextStep}
                     disabled={(currentStep === 0 && (errors.name || errors.email || errors.password)) ||
-                      (currentStep === 1 && (errors.address)||(errors.about)) ||
-                      (currentStep === 2) }
+                      (currentStep === 1 && (errors.address)||(errors.about)) }
                     className={`px-8 py-3 bg-gradient-to-r from-[#007E85] to-[#00A3AD] text-white font-semibold rounded-full transition-all w-full sm:w-auto sm:ml-auto shadow-md ${
                       (currentStep === 0 && (errors.name || errors.email || errors.password)) ||
-                      (currentStep === 1 && (errors.address)||(errors.about)) ||
-                      (currentStep === 2) 
+                      (currentStep === 1 && (errors.address)||(errors.about))
                         ? "opacity-50 cursor-not-allowed"
                         : "hover:from-[#006668] hover:to-[#008A93]"
                     }`}
